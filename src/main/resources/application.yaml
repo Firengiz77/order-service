@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:postgresql://ecom.cdsiw8okgh2n.eu-central-1.rds.amazonaws.com:5432/ecom
+    username: fira
+    password: Firengiz77
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+doc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+server:
+  port: 8083
+
+file-service:
+  url: http://localhost:8083
